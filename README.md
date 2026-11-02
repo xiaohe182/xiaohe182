@@ -11,7 +11,7 @@ Building practical systems, automation tools & thoughtful interfaces — from UI
 
 <p>
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=ts,vue,react,nodejs,electron,kotlin,html,css&perline=8" alt="tech stack" />
+  <img src="https://skillicons.dev/icons?i=ts,vue,react,nodejs,electron,rust,kotlin,html,css&perline=9" alt="tech stack" />
 </a>
 </p>
 
@@ -21,7 +21,7 @@ Building practical systems, automation tools & thoughtful interfaces — from UI
 
 </div>
 
-我关注从界面到服务端的完整交付:让业务流程可执行,让重复操作可自动化,让失败路径可恢复。项目覆盖网页数据采集、AI 图像工程、订单履约、Android 数据同步与开发者工具。
+我关注从界面到服务端的完整交付:让业务流程可执行,让重复操作可自动化,让失败路径可恢复。项目覆盖桌面自动化、系统工具、AI 图像工程、订单履约、移动端数据同步与开发者工具。
 
 ## 🧩 Selected work
 
@@ -29,55 +29,73 @@ Building practical systems, automation tools & thoughtful interfaces — from UI
 <tr>
 <td width="50%" valign="top">
 <sub>01 / DESKTOP AUTOMATION · 旗舰</sub>
-<h3><a href="https://github.com/xiaohe182/collect">Collect Studio</a></h3>
+<h3><a href="https://github.com/xiaohe182/collect-studio">Collect Studio</a></h3>
 <p><b>可视化网页数据采集工作台</b></p>
 <p>Electron + 内置 Chromium,自动识别列表并在页面框选预览,滚动加载 / 自动翻页 / 流程树编排 / 详情采集,后台线程导出 CSV · JSON · Excel。</p>
 <p><code>Electron</code> <code>Chromium</code> <code>IPC</code></p>
 <sub>主进程桥接 · 流程树执行器 · 分批备份 · 后台线程导出</sub>
 </td>
 <td width="50%" valign="top">
-<sub>02 / AI ENGINEERING</sub>
+<sub>02 / SYSTEMS TOOLING · RUST</sub>
+<h3><a href="https://github.com/xiaohe182/heprint">HePrint</a></h3>
+<p><b>替代 C-Lodop 的桌面打印服务</b></p>
+<p>Rust + WebView2,单文件约 1.5MB 双击即用;HTTP + WebSocket 双协议,26 个 HE_ 前缀精选 API,TypeScript SDK 一等公民,端口错开可与 C-Lodop 共存。</p>
+<p><code>Rust</code> <code>WebView2</code> <code>WebSocket</code></p>
+<sub>单文件交付 · 双协议服务 · TS SDK · 零依赖安装</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<sub>03 / AI ENGINEERING</sub>
 <h3><a href="https://github.com/xiaohe182/ai-image-workbench">AI Image Workbench</a></h3>
 <p><b>本地优先的 AI 图像工作台</b></p>
 <p>换背景 / 换模特 / 透明抠图 / 画布精修,统一接入腾讯云 TokenHub 8 个图像模型,同步返回与任务轮询双模;零构建前端 + Node 标准库后端。</p>
 <p><code>Node.js</code> <code>sharp</code> <code>TokenHub</code></p>
 <sub>模型适配层 · 轮询状态机 · A/B 工作区 · 日志脱敏</sub>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
-<sub>03 / BUSINESS SYSTEMS</sub>
-<h3><a href="https://github.com/xiaohe182/shop">OrderDesk</a></h3>
+<sub>04 / BUSINESS SYSTEMS</sub>
+<h3><a href="https://github.com/xiaohe182/orderdesk">OrderDesk</a></h3>
 <p><b>轻量订单与数字商品履约系统</b></p>
 <p>连接订单管理、支付状态轮询和限时交付,以原生 Web 技术实现可部署的业务流程。</p>
 <p><code>Node.js</code> <code>JavaScript</code> <code>HTML / CSS</code></p>
 <sub>幂等入单 · 用户数据隔离 · 交付凭证摘要存储</sub>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
-<sub>04 / MOBILE RELIABILITY</sub>
-<h3><a href="https://github.com/xiaohe182/SmsBackup">SmsBackup</a></h3>
+<sub>05 / MOBILE RELIABILITY</sub>
+<h3><a href="https://github.com/xiaohe182/sms-backup">SmsBackup</a></h3>
 <p><b>Android 短信备份与可靠同步</b></p>
 <p>在设备持有人主动授权后,将允许同步的短信写入本地队列,并提交到自定义服务器。</p>
 <p><code>uni-app</code> <code>Kotlin / UTS</code> <code>SQLite</code></p>
 <sub>WorkManager 指数退避 · 双重去重 · 幂等上传</sub>
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
-<sub>05 / DEVELOPER TOOLS</sub>
-<h3><a href="https://github.com/xiaohe182/accountManage">Codex Auth Admin</a></h3>
+<sub>06 / DEVELOPER TOOLS</sub>
+<h3><a href="https://github.com/xiaohe182/codex-auth-admin">Codex Auth Admin</a></h3>
 <p><b>可自托管的授权文件管理后台</b></p>
 <p>集中处理已有授权文件的导入、启停、备注与导出,并支持 CLIProxyAPI 同步。</p>
 <p><code>Vue 3</code> <code>Element Plus</code> <code>Node.js</code></p>
 <sub>本地 JSON 持久化 · 加密授权文件存储 · 前后端联调</sub>
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
-<sub>06 / AI TOOLING</sub>
+<sub>07 / AI TOOLING</sub>
 <h3><a href="https://github.com/xiaohe182/moreMcp">moreMcp</a></h3>
 <p><b>个人 AI 能力注册中心</b></p>
 <p>以 registry.yml 为唯一事实源,统一管理 MCP Server 与技能,为 Codex / Claude Code / Cursor / ZCode 生成编辑器专属配置,按 Profile 分档启用。</p>
 <p><code>YAML</code> <code>MCP</code> <code>Profiles</code></p>
 <sub>单一事实源 · 编辑器适配器 · 最小启用原则</sub>
+</td>
+<td width="50%" valign="top">
+<sub>08 / WEB GAME · 在线可玩</sub>
+<h3><a href="https://github.com/xiaohe182/PlantsVsZombies">Plants vs. Zombies Web</a></h3>
+<p><b>植物大战僵尸网页版复刻</b></p>
+<p>原生 JavaScript 实现,免安装。GitHub Pages 在线试玩:<a href="https://xiaohe182.github.io/PlantsVsZombies/">xiaohe182.github.io/PlantsVsZombies</a></p>
+<p><code>JavaScript</code> <code>HTML5</code> <code>Game</code></p>
+<sub>零依赖 · 纯前端 · 一键部署静态托管</sub>
 </td>
 </tr>
 </table>
