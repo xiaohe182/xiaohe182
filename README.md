@@ -30,9 +30,10 @@
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=xiaohe182&hide_border=true&background=0D1117&ring=5CE1E6&fire=F25D2D&currStreakLabel=5CE1E6&sideLabels=C9D1D9&dates=8B949E&currStreakNum=FFFFFF&sideNums=FFFFFF&locale=cn" alt="连续提交" height="165" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=xiaohe182&bg_color=0D1117&color=C9D1D9&line=5CE1E6&point=F25D2D&hide_border=true&area=true&area_color=5CE1E633" alt="活动曲线" width="100%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=xiaohe182&theme=tokyonight" alt="概览" width="100%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=xiaohe182&theme=tokyonight" alt="语言分布" width="49%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=xiaohe182&theme=tokyonight" alt="统计" width="49%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=xiaohe182&theme=tokyonight" alt="编码时段" width="100%" />
 
 </div>
 
